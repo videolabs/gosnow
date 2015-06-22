@@ -21,7 +21,7 @@ const (
 	WorkerIdBits = 10              // worker id
 	MaxWorkerId  = -1 ^ (-1 << 10) // worker id mask
 	SequenceBits = 12              // sequence
-	MaxSequence  = -1 ^ (-1 << 12) //sequence mask    
+	MaxSequence  = -1 ^ (-1 << 12) //sequence mask
 )
 
 var (
