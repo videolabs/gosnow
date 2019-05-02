@@ -5,12 +5,12 @@ github.com/twitter/snowflake in golang
 package gosnow
 
 import (
+	"fmt"
 	"hash/crc32"
 	"math/rand"
 	"net"
 	"sync"
 	"time"
-	"fmt"
 )
 
 const (
@@ -59,7 +59,7 @@ func (sf *SnowFlake) Next() (uint64, error) {
 		return 0, fmt.Errorf("Invalid timestamp: %v - precedes %v", ts, sf)
 	}
 	sf.lastTimestamp = ts
-	return sf.uint64(),  nil
+	return sf.uint64(), nil
 }
 
 func Default() (*SnowFlake, error) {
