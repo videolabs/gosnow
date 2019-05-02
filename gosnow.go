@@ -18,9 +18,9 @@ const (
 )
 
 const (
-	WorkerIdBits = 10              // worker id
+	WorkerIdBits = 8               // worker id
 	MaxWorkerId  = -1 ^ (-1 << 10) // worker id mask
-	SequenceBits = 12              // sequence
+	SequenceBits = 8               // sequence
 	MaxSequence  = -1 ^ (-1 << 12) //sequence mask
 )
 
