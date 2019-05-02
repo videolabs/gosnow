@@ -25,7 +25,7 @@ const (
 )
 
 var (
-	Since int64 = time.Date(2015, 1, 0, 0, 0, 0, 0, time.UTC).UnixNano() / nano
+	Since int64 = time.Date(2019, 1, 0, 0, 0, 0, 0, time.UTC).UnixNano() / nano
 )
 
 type SnowFlake struct {
