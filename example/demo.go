@@ -5,7 +5,7 @@ github.com/twitter/snowflake in golang
 package main
 
 import (
-	"github.com/sdming/gosnow"
+	"github.com/videolabs/gosnow"
 	"fmt"
 )
 
